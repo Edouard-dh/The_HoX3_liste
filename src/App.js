@@ -39,10 +39,21 @@ const App = () => {
     <div className="App">
       <header>
         <span role="img" aria-label="">🎅</span>
-        <h1>The Ho Ho Ho liste</h1>
+        <span className="header_h1_and_a">
+          <a href="https://edouard-dhalluin.fr/" id="back_to_v_card" ><img  className="header_logo" src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="retour au site d édouard D'Halluin"/></a>
+          <h1>The Ho Ho Ho liste</h1>
+        </span>
         <span role="img" aria-label="">🎄</span>
       </header>
       <div className="container">
+        <section>
+          <p>
+            En tant que Père Noël, vous n'avez pas le temps de choisir un cadeau pour chaque enfant? Faites appel à notre Ho! Ho! Ho! liste.
+          </p>
+          <p>
+            Pour l'utilisation, rien de plus simple : renseignez le prénom de l'enfant, choisissez s'il a été sage ou non et laisser l'outil trouver le cadeau parfait.
+          </p>
+        </section>
         <AddTodo />
 
         {renderTodos()}
