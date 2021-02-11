@@ -47,11 +47,7 @@ h1 {
   margin: 0;
 }
 
-@media (max-width: 575px) {
-  h1 {
-    font-size: 1.4rem;
-  }
-}
+
 
 h2 {
   font-size: 2rem;
@@ -65,8 +61,8 @@ h2 {
   margin-top: 2rem;
 }
 
-.todo-input {
-  width: 55%;
+.todo-input-text {
+  width: 50%;
   padding: 1rem;
   margin-right: 1rem;
   font-size: 2rem;
@@ -131,4 +127,25 @@ h2 {
 
 .btn-danger {
   background-color: #bd1616;
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  .form-group{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .todo-input-text{
+    width: 100%;
+    margin-bottom: 2rem;
+
+  }
+
+  .div-radio{
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 }
