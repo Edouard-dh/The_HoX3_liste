@@ -22,17 +22,19 @@ export const Todo = ({ item, checkboxAction, buttonAction }) => {
                         {item.text}
                     </span>
                 </div>
-                <span className={`todoText ${textStyle}`}
+                <div className={`todoText ${textStyle}`}
                 >
                     {item.gift.text}
-                </span>
+                </div>
             </div>
-            <Button
+           <div>
+           <Button
                 className="btn btn-danger"
                 action={buttonAction}
             >
                 Cadeau offert
           </Button>
+           </div>
         </div>
     )
 }

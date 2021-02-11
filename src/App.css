@@ -130,6 +130,19 @@ h2 {
 }
 
 @media (max-width: 575px) {
+ 
+.todo{
+  display: flex;
+  flex-direction: column;
+}
+.todoLeft{
+  display: flex;
+  text-align: center;
+}
+
+  .todoText , .todoGift{
+    font-size: 1rem;
+    }
   h1 {
     font-size: 1.4rem;
   }
@@ -148,4 +161,7 @@ h2 {
     margin-bottom: 2rem;
     text-align: center;
   }
+   
+  
+  
 }
